@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio" />
+  <title>Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" id="navLogo">YN</a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about"   class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills"  class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#"        class="nav-link nav-resume" id="navResume" target="_blank">Resume ↗</a>
+      </div>
+
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas"></canvas>
+
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Open to opportunities
+      </div>
+
+      <h1 class="hero-name" id="heroName">Your Name</h1>
+
+      <div class="hero-tagline">
+        <span class="tagline-static">I </span>
+        <span class="tagline-dynamic" id="taglineDynamic"></span>
+        <span class="tagline-cursor">|</span>
+      </div>
+
+      <p class="hero-sub" id="heroSub">Developer · Karachi, Pakistan</p>
+
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact"  class="btn btn-ghost">Let's Talk</a>
+      </div>
+
+      <div class="hero-links">
+        <a href="#" id="heroGithub" target="_blank" rel="noopener" class="icon-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.72-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.05.138 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.69.8.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="#" id="heroLinkedin" target="_blank" rel="noopener" class="icon-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span class="scroll-label">scroll</span>
+      <div class="scroll-bar"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label fade-in">
+        <span class="label-num">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-text-col fade-in">
+          <p id="aboutPara">Loading...</p>
+          <a href="#" class="btn btn-primary" id="resumeBtn" style="display:none" target="_blank">
+            Download Resume ↓
+          </a>
+        </div>
+
+        <div class="about-stats-col fade-in">
+          <div class="stat-box">
+            <span class="stat-value" id="statRepos">—</span>
+            <span class="stat-key">Public Repos</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value" id="statFollowers">—</span>
+            <span class="stat-key">GitHub Followers</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value" id="statFeatured">0</span>
+            <span class="stat-key">Featured Projects</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value" id="statStars">—</span>
+            <span class="stat-key">Total Stars</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROJECTS ═══════════ -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-label fade-in">
+        <span class="label-num">02</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <p class="section-sub fade-in">Selected work — fetched live from GitHub</p>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Cards injected by JS -->
+      </div>
+
+      <div class="projects-footer fade-in">
+        <a href="#" id="allProjectsLink" target="_blank" rel="noopener" class="btn btn-outline">
+          See All Repositories ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SKILLS ═══════════ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-label fade-in">
+        <span class="label-num">03</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-label fade-in">
+        <span class="label-num">04</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+
+      <div class="contact-center fade-in">
+        <p class="contact-blurb">
+          Open to job opportunities, internships, and interesting projects.<br/>
+          Feel free to reach out — I'll get back to you!
+        </p>
+        <a href="#" class="contact-email" id="contactEmail">your@email.com</a>
+
+        <div class="contact-row">
+          <a href="#" id="ctaGithub" target="_blank" rel="noopener" class="btn btn-outline-sm">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.72-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.05.138 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.69.8.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="#" id="ctaLinkedin" target="_blank" rel="noopener" class="btn btn-outline-sm">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span id="footerName">Your Name</span>
+      <span class="footer-mid">Built with GitHub Pages · Powered by GitHub API</span>
+      <a href="#home" class="footer-top">↑ Back to top</a>
+    </div>
+  </footer>
+
+  <!-- Scripts (config must load first) -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
