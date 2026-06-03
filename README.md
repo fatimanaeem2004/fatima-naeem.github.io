@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing projects in data engineering, machine learning, and AI/NLP.
 
-**Live site:** https://your-username.github.io
+**Live site:** https://fatima-naeem.github.io
 
 ---
 
