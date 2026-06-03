@@ -21,7 +21,7 @@ const CONFIG = {
 I'm passionate about solving complex data challenges and building systems that are both rigorous and impactful. Currently seeking opportunities in Data Analytics, Data Engineering, and AI/ML Engineering.`,
 
   // ── Links ──────────────────────────────────────────────────
-  github:   "your-github-username",   // ← replace with your GitHub username
+  github:   "fatima-naeem-username",   // ← replace with your GitHub username
   linkedin: "https://linkedin.com/in/fatimanaeem",
   email:    "f.naeem.26933@khi.iba.edu.pk",
   resume:   "Fatima_Naeem_CV.pdf",    // rename your CV file to this and place it here
